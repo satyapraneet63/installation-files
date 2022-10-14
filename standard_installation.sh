@@ -19,8 +19,6 @@ sudo dpkg -i /tmp/zoom_amd64.deb
 wget https://downloads.slack-edge.com/releases/linux/4.28.184/prod/x64/slack-desktop-4.28.184-amd64.deb -P /tmp
 sudo dpkg -i /tmp/slack-desktop-4.28.184-amd64.deb
 
-sudo apt install git git-lfs -y
-git lfs install
 sudo apt install mysql-server -y
 
 #MySQL Workbench
@@ -35,3 +33,5 @@ sudo dpkg -i /tmp/anydesk_6.2.0-1_amd64.deb
 sudo snap install intellij-idea-community --classic
 
 sudo apt --fix-broken install -y
+sudo apt install git git-lfs -y
+git lfs install
