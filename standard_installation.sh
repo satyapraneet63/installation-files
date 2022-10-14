@@ -16,8 +16,9 @@ wget https://zoom.us/client/5.12.2.4816/zoom_amd64.deb -P /tmp
 sudo dpkg -i /tmp/zoom_amd64.deb
 
 #slack installing
-wget https://downloads.slack-edge.com/releases/linux/4.28.184/prod/x64/slack-desktop-4.28.184-amd64.deb -P /tmp
-sudo dpkg -i /tmp/slack-desktop-4.28.184-amd64.deb
+#wget https://downloads.slack-edge.com/releases/linux/4.28.184/prod/x64/slack-desktop-4.28.184-amd64.deb -P /tmp
+#sudo dpkg -i /tmp/slack-desktop-4.28.184-amd64.deb
+sudo apt install slack-desktop -y
 
 sudo apt install mysql-server -y
 
