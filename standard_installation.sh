@@ -1,4 +1,10 @@
 #!/bin/bash
+
+set -eu -o pipefail # fail on error and report it, debug all lines
+
+sudo -n true
+test $? -eq 0 || exit 1 "you should have sudo privilege to run this script"
+
 sudo apt-get update
 sudo apt-get upgrade -y
 echo deb http://archive.ubuntu.com/ubuntu/ bionic universe | sudo tee /etc/apt/sources.list.d/bionic.list
