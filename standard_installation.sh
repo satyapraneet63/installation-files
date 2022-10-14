@@ -33,3 +33,5 @@ sudo dpkg -i /tmp/anydesk_6.2.0-1_amd64.deb
 
 #intellij IDE
 sudo snap install intellij-idea-community --classic
+
+sudo apt --fix-broken install -y
